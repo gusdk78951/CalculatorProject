@@ -21,6 +21,9 @@ fun main() {
     else if (operator == "/"){
         calculator.divide(num1, num2)
     }
+    else if (operator == "%"){      // 나머지 연산 추가
+        calculator.remainder(num1, num2)
+    }
 }
 
 class Calculator {
@@ -39,5 +42,9 @@ class Calculator {
     fun divide(num1:Double, num2:Double){
         var div = num1 / num2
         println("$div")
+    }
+    fun remainder(num1: Double, num2: Double){    // 나머지 출력 추가
+        var rem = num1 % num2
+        println("$rem")
     }
 }
